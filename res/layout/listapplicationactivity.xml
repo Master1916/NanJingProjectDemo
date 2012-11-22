@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	 android:text="查看一周指标"
+     	
+                />
+     <Button
+        android:id="@+id/but2"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	 android:text="查看工作安排信息"
+                />
+    
+      <Button
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	  	 android:text="查看工作请示信息"
+                />
+     
+       <Button
+        android:id="@+id/but4"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+    android:text="查看工作计划信息"
+                />
+      
+        <Button
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	  android:text="查看工作总结信息"
+                />
+        <Button
+        android:id="@+id/but6"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	
+     	 android:text="查看用户登录信息"
+           />
+       
+
+</LinearLayout>

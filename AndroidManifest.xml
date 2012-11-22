@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.litsoft.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" /> 
+    <uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+　 <uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+    <application
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity android:name="com.litsoft.demo.activity.IconActivity"
+             android:label="@string/app_name" 
+               >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.litsoft.demo.activity.MyTabHostFive"
+            android:launchMode="singleTask"
+             >
+            
+        </activity>
+            
+        <activity android:name="com.litsoft.demo.activity.Layout1" />
+        <activity android:name="com.litsoft.demo.activity.Layout2" />
+        <activity android:name="com.litsoft.demo.activity.Layout3" />
+        <activity
+            android:name="com.litsoft.demo.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.litsoft.demo.activity.FlowRateActivity" >
+            <intent-filter>
+                <action android:name="intent.action.FLOWRATEACTIVITY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.litsoft.demo.activity.ChooseViewModeActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        
+         <activity android:name="com.calendar.storm.CalendarDemoActivity" />
+         
+           <activity android:name="com.litsoft.demo.activity.CapplicationActivity" />
+        <activity android:name="com.litsoft.demo.activity.ListApplicationActivity" />
+        <activity android:name="com.litsoft.demo.activity.ChooseWeekActivity" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.XYChartBuilder" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.PieChartBuilder" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+    </application>
+
+</manifest>

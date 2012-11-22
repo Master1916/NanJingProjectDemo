@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tilte"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="网络攻击统计"
+             android:textSize="30px" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:id="@+id/everyday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="20px" >
+
+                <TextView
+                    android:id="@id/show_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rili1"
+                    android:gravity="center"
+                    android:textColor="#00ffff"
+                android:textSize="18px"  />
+
+                <TextView
+                    android:id="@+id/choose_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/choose1"
+                    android:gravity="center"
+                    android:text="选择" 
+                      android:textColor="#496E8E"
+                android:textSize="18px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pchart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ping"
+                android:paddingLeft="10px"
+                android:paddingTop="7px" >
+
+                <TextView
+                    android:id="@+id/jjsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="紧急事件"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/yzsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="严重事件"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/zysj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="重要事件"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/jgsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="警告事件"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/zdsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="阻断事件"
+                    android:textSize="17px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20px" >
+
+                <Spinner
+                    android:id="@+id/choose_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10px"
+                ></LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
