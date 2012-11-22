@@ -53,7 +53,7 @@ public class Layout2 extends Activity implements OnClickListener {
 	double xStart, xEnd;
 	int xNum, color;
 	private String Legend;
-
+        //初始化参数
 	private void initParm(int num) {
 		values = new double[num];
 		time = show_time.getText().toString();
@@ -135,13 +135,10 @@ public class Layout2 extends Activity implements OnClickListener {
 	private void updateView() {
 
 		View view = pieChart.executeGetView(this);
-
-		// 为其建立布局样式，对应xml布局中：
-		// android:layout_width="fill_parent"
-		// android:layout_height="wrap_content"
+ 
 		LinearLayout.LayoutParams mLayoutParams = new LinearLayout.LayoutParams(
 				LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-		// 在父类布局中添加它，及布局样式
+		 
 		pchart.removeAllViews();
 		pchart.addView(view, mLayoutParams);
 	}
