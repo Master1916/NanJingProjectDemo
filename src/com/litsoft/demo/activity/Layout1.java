@@ -45,7 +45,7 @@ public class Layout1 extends Activity implements OnClickListener {
 
 	@Override
 	protected void onStart() {
-		// TODO Auto-generated method stub
+		 
 		super.onStart();
 		initParm();
 	}
@@ -59,7 +59,7 @@ public class Layout1 extends Activity implements OnClickListener {
 		return str;
 
 	}
-
+	//初始化参数
 	private void initParm() {
 		showTime = (TextView) findViewById(R.id.show_time);
 
